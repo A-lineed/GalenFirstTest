@@ -1,0 +1,73 @@
+{
+  "testId" : "1-loginpagetests.gspec",
+  "name" : "loginPageTests.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  loginPageTests.gspec -url http://165.227.93.41/lojinha-web/ -size 1280x720 -htmlreport relatorios -config galen.config -Dwebdriver.chrome.driver=C:\\Users\\aefranca\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe -Dwebdriver.gecko.driver=C:\\Users\\aefranca\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\geckodriver\\geckodriver.exe -Djna.nosys=true",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: loginPageTests.gspec included tags: ",
+          "status" : "error",
+          "time" : 1673611653429,
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "loginPageTests.gspec",
+              "lineNumber" : 5
+            },
+            "objects" : [ {
+              "name" : "botaoEntrar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "loginPageTests.gspec",
+                  "lineNumber" : 7
+                },
+                "name" : "css background-color is \"rgba(38, 166, 154, 1)\"",
+                "highlight" : [ "botaoEntrar" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "loginPageTests.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "below campoUsuario 120 to 130 px",
+                "errors" : [ "\"botaoEntrar\" is 147px below \"campoUsuario\" which is not in range of 120 to 130px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "botaoEntrar",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "campoUsuario",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "120 to 130px",
+                  "realDistance" : "147px"
+                } ],
+                "highlight" : [ "botaoEntrar", "campoUsuario" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "campoUsuario" : {
+              "area" : [ 348, 248, 567, 46 ]
+            },
+            "botaoEntrar" : {
+              "area" : [ 348, 441, 86, 36 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1673611652434,
+        "type" : "node"
+      } ],
+      "time" : 1673611649149,
+      "type" : "node"
+    } ]
+  }
+}
